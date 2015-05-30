@@ -1,7 +1,8 @@
 module.exports = function(app, exp) {
 
 	// rewrite URL to hotprobs.com
-	app.configure('production', function(){
+	
+/*	app.configure('production', function(){
 		app.use(function(req, res, next){
 			var hostname = req.header("host").split(":")[0];
 			if (hostname != "www.hotprobs.com") {
@@ -11,6 +12,7 @@ module.exports = function(app, exp) {
 			next();
 		});
 	});
+*/
 
 	app.configure(function(){
 		app.set('views', app.root + '/app/server/views');
